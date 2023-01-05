@@ -2,14 +2,7 @@
 
 Face Recognizer identifies the face of an individual by their name with the help of their facial features.
 Face Recognizer uses deep learning algorithms to compare a live capture or digital image with the stored faceprints(also known as datasets) to verify identity.
-The algorithm used for classification is haar cascade by Paul Viola and Michael Jones
-
-## Theory
-Using 2 algorithm for 2 different process.
-
-* Face Detection: it has the objective of finding the faces (location and size) in an image and probably extract them to be used by the face recognition algorithm. The project is used "Haar Cascade Face Detection Algorithm" for face detection
-
-* Face Recognition: with the facial images already extracted, cropped, resized and usually converted to grayscale, the face recognition algorithm is responsible for finding characteristics which best describe the image. The project is used "LBPH Algorithm" for face recogintion.
+The algorithm used for detection is haar cascade by Paul Viola and Michael Jones and for recognition is LBPH Face Recognition algorithm.
 
 ### Haar Cascade for face detection
 
