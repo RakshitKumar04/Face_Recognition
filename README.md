@@ -29,11 +29,11 @@ References:
 ## Installing and Running
 - Download the project as a zip file and unzip it.
 - Download all the prerequisite libraries to run the program. 
-```
-pip install opencv-python 
-pip install opencv-contrib-python
-pip install numpy
-```
+  ```
+  pip install opencv-python 
+  pip install opencv-contrib-python
+  pip install numpy
+  ```
 - Run 'createData.py'. This python file will ask for an ID(type any integer value) to enter and will help create a dataset by turning on the camera and capturing the images. You can also run the command ``` python createData.py``` in your CLI.
 - Now comes training the dataset. run ```python trainData.py``` this will also create a trainData.yml file that will help in configuration while recognising someone.
 - Finally we will run ```python recogniseData.py``` this will turn on your camera and will recognise the face.
