@@ -30,8 +30,9 @@ References:
 
 ## Installing
 1. Download the project as zip file and unzip.
-2. Run 'train_face.py'. This python file will create dataset for you. You can do that with command file.
-```python train_face.py```
+2. Run 'createData.py'. This python file ask for an ID(type any integer value) to enter and will help create dataset by turning on the camera and capturing the images. You can also run the command.
+```python createData.py``` in your CLI.
+3. Now come training the dataset. run ```python trainData.py``` this will also create a trainData.yml file to configure while recognising someone
 3. Create ID (for example, you can give you name) and press capture. Then follow the steps in program.
 4. After you saw "Done!" in label you can close the frame
 5. Run 'detect_main.py' and enjoy it!
