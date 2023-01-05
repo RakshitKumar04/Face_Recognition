@@ -42,4 +42,4 @@ References:
   
 - Finally we will run ```python recogniseData.py``` this will turn on your camera and will recognise the face.
 
-    ![Screenshot_20230105_050300](https://user-images.githubusercontent.com/72027411/210847201-052493c5-d1d5-4b23-94e9-89349de168dc.png)
+    ![Screenshot 2023-01-05 170316](https://user-images.githubusercontent.com/72027411/210855465-f73d36bb-1e28-45de-977a-a332edd9e581.png)
