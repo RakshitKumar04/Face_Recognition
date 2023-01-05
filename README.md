@@ -19,8 +19,6 @@ Local Binary Pattern (LBP) is a simple yet very efficient texture operator which
 References:
 * https://towardsdatascience.com/face-recognition-how-lbph-works-90ec258c3d6b
 
-# Getting Started
-
 ## Prerequisites
 1. [OpenCV 3.x](https://www.python.org/downloads/)
 2. [Python 3](https://pypi.org/project/opencv-python/)
@@ -35,5 +33,13 @@ References:
   pip install numpy
   ```
 - Run 'createData.py'. This python file will ask for an ID(type any integer value) to enter and will help create a dataset by turning on the camera and capturing the images. You can also run the command ``` python createData.py``` in your CLI.
+
+    ![Screenshot (3)](https://user-images.githubusercontent.com/72027411/210846974-9bca4b02-c74a-4d43-9734-7402a799e55c.png)
+
 - Now comes training the dataset. run ```python trainData.py``` this will also create a trainData.yml file that will help in configuration while recognising someone.
+
+    ![Screenshot (2)](https://user-images.githubusercontent.com/72027411/210847168-771e5e17-bf38-45f2-a9cb-7dc6fbeb13ae.png)
+  
 - Finally we will run ```python recogniseData.py``` this will turn on your camera and will recognise the face.
+
+    ![Screenshot_20230105_050300](https://user-images.githubusercontent.com/72027411/210847201-052493c5-d1d5-4b23-94e9-89349de168dc.png)
