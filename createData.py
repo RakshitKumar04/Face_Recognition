@@ -1,7 +1,7 @@
 import cv2   
 import numpy as np
 
-CLASSIFIER_PATH = "Face_Recognition/Classifier/haarcascade_frontalface_default.xml"
+CLASSIFIER_PATH = "C:/Users/kumar/OneDrive/GitHub/Face_Recognition/Classifier/haarcascade_frontalface_default.xml"
 classifier = cv2.CascadeClassifier(CLASSIFIER_PATH)
 
 cam = cv2.VideoCapture(0)
@@ -17,7 +17,7 @@ while(True):
     for face in faces:
         num += 1
         (x, y, w, h) = face
-        cv2.imwrite('Facerecognition/dataset/User.'+str(id)+"."+str(num)+".jpg", gray[y:y+h, x:x+w])
+        cv2.imwrite('C:/Users/kumar/OneDrive/GitHub/Face_Recognition/dataset/User.'+str(id)+"."+str(num)+".jpg", gray[y:y+h, x:x+w])
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
         cv2.waitKey(1)
 
