@@ -2,11 +2,11 @@
 
 Face Recognizer identifies the face of an individual by their name with the help of their facial features.
 Face Recognizer uses deep learning algorithms to compare a live capture or digital image with the stored faceprints(also known as datasets) to verify identity.
-The algorithm used for detection is haar cascade by Paul Viola and Michael Jones and for recognition is LBPH Face Recognition algorithm.
+The algorithm used for detection is haar cascade by Paul Viola and Michael Jones and for recognition is the LBPH Face Recognition algorithm.
 
 ### Haar Cascade for face detection
 
-Basically, the technique trains a cascade function (boxes of shapes) that appears in images with faces, and learns the general pattern of a face through the change in colors/shadows in the image. In the original paper, the author claims to have achieved 95% accuracy in face detection. You can find detailed explanation in OpenCV documentation.
+The technique trains a cascade function (boxes of shapes) that appears in images with faces and learns the general pattern of a face through the change in colours/shadows in the image. In the original paper, the author claims to have achieved 95% accuracy in face detection. You can find a detailed explanation in the OpenCV documentation.
 
 References:
 * https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html
@@ -14,7 +14,7 @@ References:
 
 ### LBPH Algorithm for face recognition
 
-Local Binary Pattern (LBP) is a simple yet very efficient texture operator which labels the pixels of an image by thresholding the neighborhood of each pixel and considers the result as a binary number. Using the LBP combined with histograms we can represent the face images with a simple data vector. 
+Local Binary Pattern (LBP) is a simple yet very efficient texture operator which labels the pixels of an image by thresholding the neighbourhood of each pixel and considers the result as a binary number. Using the LBP combined with histograms we can represent the face images with a simple data vector. 
 
 References:
 * https://towardsdatascience.com/face-recognition-how-lbph-works-90ec258c3d6b
@@ -26,14 +26,9 @@ References:
 2. [Python 3](https://pypi.org/project/opencv-python/)
 3. [Numpy](https://pypi.org/project/numpy/)
 
-
-
-## Installing
-1. Download the project as zip file and unzip.
-2. Run 'createData.py'. This python file ask for an ID(type any integer value) to enter and will help create dataset by turning on the camera and capturing the images. You can also run the command.
-```python createData.py``` in your CLI.
-3. Now come training the dataset. run ```python trainData.py``` this will also create a trainData.yml file to configure while recognising someone
-3. Create ID (for example, you can give you name) and press capture. Then follow the steps in program.
-4. After you saw "Done!" in label you can close the frame
-5. Run 'detect_main.py' and enjoy it!
-```python detect_main.py```
+## Installing and Running
+1. Download the project as a zip file and unzip it.
+2. Download all the prerequisite libraries to run the program. ```pip install opencv-python``` ```pip install opencv-contrib-python``` ```pip install numpy```
+3. Run 'createData.py'. This python file will ask for an ID(type any integer value) to enter and will help create a dataset by turning on the camera and capturing the images. You can also run the command ``` python createData.py``` in your CLI.
+4. Now comes training the dataset. run ```python trainData.py``` this will also create a trainData.yml file that will help in configuration while recognising someone.
+5. Finally we will run ```python recogniseData.py``` this will turn on your camera and will recognise the face.
