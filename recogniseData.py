@@ -21,7 +21,7 @@ while(True):
         id, conf = recognizer.predict(gray[y:y+h, x:x+w])
         if(conf < 50):
             if(id == 1):
-                name = "Rakshit"
+                name = "Proyanka Chopra"
                 frame = cv2.putText(frame, name, (x, y+h),
                                     cv2.FONT_HERSHEY_DUPLEX, 0.7, (0, 0, 255), 3)
     cv2.imshow('Face', frame)
